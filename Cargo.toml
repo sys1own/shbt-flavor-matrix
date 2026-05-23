@@ -1,0 +1,12 @@
+[package]
+name = "anyon_simulator"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "anyon_simulator"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.23", features = ["extension-module", "abi3-py39"] }
+rug = { version = "1.30", features = ["float", "complex", "serde", "std"] }
